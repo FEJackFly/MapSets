@@ -8,6 +8,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@maptalks/gl": "^0.69.5",
+    "@maptalks/gltf-layer": "^0.33.4",
+    "@maptalks/transform-control": "^0.6.1",
+    "@maptalks/vt": "^0.64.1",
+    "@turf/turf": "^6.5.0",
+    "maptalks": "^1.0.0-rc.4",
     "vue": "^3.2.25"
   },
   "devDependencies": {
