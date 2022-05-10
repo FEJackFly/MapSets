@@ -2018,6 +2018,11 @@ splaytree@^3.1.0:
   resolved "https://registry.yarnpkg.com/splaytree/-/splaytree-3.1.1.tgz#e1bc8e68e64ef5a9d5f09d36e6d9f3621795a438"
   integrity sha512-9FaQ18FF0+sZc/ieEeXHt+Jw2eSpUgUtTLDYB/HXKWvhYVyOc7h1hzkn5MMO3GPib9MmXG1go8+OsBBzs/NMww==
 
+stats.js@^0.17.0:
+  version "0.17.0"
+  resolved "https://registry.yarnpkg.com/stats.js/-/stats.js-0.17.0.tgz#b1c3dc46d94498b578b7fd3985b81ace7131cc7d"
+  integrity sha1-scPcRtlEmLV4t/05hbgaznExzH0=
+
 supports-preserve-symlinks-flag@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"

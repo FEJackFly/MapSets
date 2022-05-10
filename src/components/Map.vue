@@ -4,13 +4,14 @@ import * as maptalks from "maptalks";
 import { GroupGLLayer } from "@maptalks/gl";
 import { GLTFMarker, GLTFLayer } from "@maptalks/gltf-layer";
 import { TransformControl } from "@maptalks/transform-control";
+import * as Stats from "stats.js";
 
 const state = {
   map: null,
   mapConfig: {
     center: [-0.113049, 51.498568],
     zoom: 14,
-    pitch: 80,
+    pitch: 0,
     bearing: 180,
     lights: {
       ambient: {
@@ -26,6 +27,10 @@ const state = {
         direction: [1, -0.4, -1],
       },
     },
+    hitDetect: false,
+    geometryEvents: false,
+    layerCanvasLimitOnInteracting: 0,
+    fpsOnInteracting: 40,
   },
   sceneConfig: {
     hitDetect: false,
@@ -62,9 +67,13 @@ const state = {
     },
   },
   events: {
-    ifEdit: false,
+    ifEdit: true,
   },
 };
+const stats = new Stats();
+stats.showPanel(0); // 0: fps, 1: ms, 2: mb, 3+: custom
+document.body.appendChild(stats.dom);
+
 const init = () => {
   // 初始化
   const map = initMap();
@@ -72,6 +81,7 @@ const init = () => {
   map.addLayer(groupGLLayer);
   initEvents(map, groupGLLayer);
   state.map = map;
+  animate();
 };
 const initMap = () => {
   const map = new maptalks.Map("map", state.mapConfig);
@@ -83,6 +93,7 @@ const initLayer = () => {
   const symbol = {
     url: url,
     scale: [2, 2, 2],
+    shadow: true,
   };
   const position = [-0.113049, 51.498568];
 
@@ -142,6 +153,16 @@ onMounted(() => {
 onUnmounted(() => {
   state.map.remove();
 });
+
+let num = 0;
+// 动画
+const animate = () => {
+  stats.update();
+  num += 0.5;
+  // state.map.setBearing(num);
+
+  requestAnimationFrame(animate);
+};
 </script>
 
 <template>
