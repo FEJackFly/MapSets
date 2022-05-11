@@ -136,6 +136,11 @@
   dependencies:
     gl-matrix "^2.6.1"
 
+"@maptalks/transcoders.draco@^0.69.0":
+  version "0.69.0"
+  resolved "https://registry.yarnpkg.com/@maptalks/transcoders.draco/-/transcoders.draco-0.69.0.tgz#b5fead3d3d862c9304c81310e6a885c9790d300a"
+  integrity sha512-0y+X1Nbm+9/6nRkqsytOLwC3tD/qU9J5QcQpYsSnPUPoFvTlXdjKCKZpRnURpn56EC6e4tymGyi3MptyZGJabA==
+
 "@maptalks/transform-control@^0.6.1":
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/@maptalks/transform-control/-/transform-control-0.6.1.tgz#e864146a04a0530ebc57a1cea82945643025a636"

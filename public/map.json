@@ -1,0 +1,305 @@
+{
+  "jsonVersion": "1.0",
+  "version": "1.0.0-rc.1",
+  "extent": {
+    "xmin": 116.90189444639532,
+    "ymin": 39.573347749123826,
+    "xmax": 116.91251355877955,
+    "ymax": 39.58250560349197
+  },
+  "options": {
+    "spatialReference": {},
+    "lights": {
+      "directional": {
+        "direction": [1, 0, -1],
+        "color": [1, 1, 1]
+      },
+      "ambient": {
+        "resource": {
+          "url": "./res/temp-resources/bb501d57e1f55bcc7f1b625460bc494b771f0e0ed796eac5d1da03523b036625/hdr/2c4/2c49998b-8c3e-4ced-b98e-59cba68d5e05/sunset_in_the_chalk_quarry_1k.hdr",
+          "sh": [
+            0.24474610063681917, 0.32115384670346975, 0.40525010696354086,
+            0.0204494374531686, 0.011639124894616857, 0.007904154556549333,
+            0.04210623283538904, 0.028445546201752714, 0.01951303032759883,
+            -0.01036706582884306, 0.0018392637833096377, 0.01630117798108209,
+            -0.0017000197301937506, -0.0001370016800420307, 0.00118491874770844,
+            -0.0058426257845160786, -0.004118263767397141,
+            -0.0031268382092201137, 0.013117593095335462, 0.004496614935685468,
+            -0.0003262775591732822, -0.041157476583825, 0.0010309220676732547,
+            0.03982223069378102, -0.014053046452343603, -0.011277575549746541,
+            -0.008628347725032457
+          ]
+        },
+        "exposure": 1,
+        "hsv": [0, 0, 0],
+        "orientation": 0,
+        "prefilterCubeSize": 128
+      }
+    },
+    "seamlessZoom": true,
+    "zoomable": true,
+    "draggable": true,
+    "renderable": true,
+    "center": {
+      "x": 116.9030258529283,
+      "y": 39.582117087174794
+    },
+    "zoom": 21.713569954192142,
+    "bearing": 154.80000000000018,
+    "pitch": 70.80000000000008
+  },
+  "layers": [
+    {
+      "type": "GroupGLLayer",
+      "id": "group",
+      "layers": [
+        {
+          "type": "GeoJSONVectorTileLayer",
+          "id": "highway",
+          "options": {
+            "data": "./res/temp-resources/bb501d57e1f55bcc7f1b625460bc494b771f0e0ed796eac5d1da03523b036625/geojson/f75/f75d8e64-1eab-4642-963b-6beec8871fd3/data.geojson",
+            "spatialReference": null,
+            "style": {
+              "style": [
+                {
+                  "filter": true,
+                  "renderPlugin": {
+                    "dataConfig": {
+                      "type": "line"
+                    },
+                    "sceneConfig": {},
+                    "type": "line"
+                  },
+                  "symbol": {
+                    "lineBloom": true,
+                    "lineCap": "butt",
+                    "lineColor": [0.73, 0.73, 0.73, 1],
+                    "lineDasharray": [0, 0, 0, 0],
+                    "lineDashColor": [1, 1, 1, 0],
+                    "lineDx": 0,
+                    "lineDy": 0,
+                    "lineGapWidth": 0,
+                    "lineJoin": "miter",
+                    "lineOpacity": 1,
+                    "linePatternAnimSpeed": 0,
+                    "linePatternFile": null,
+                    "lineStrokeWidth": 0,
+                    "lineStrokeColor": [0, 0, 0, 0],
+                    "lineJoinPatternMode": 0,
+                    "lineWidth": 2,
+                    "visible": true
+                  }
+                }
+              ],
+              "featureStyle": []
+            }
+          }
+        },
+        {
+          "type": "GLTFLayer",
+          "id": "gltfs",
+          "options": {},
+          "geometries": [
+            {
+              "coordinates": {
+                "x": 116.90297511901508,
+                "y": 39.58212051274981
+              },
+              "options": {
+                "symbol": {
+                  "visible": true,
+                  "bloom": false,
+                  "ssr": false,
+                  "shadow": true,
+                  "url": "./res/temp-resources/bb501d57e1f55bcc7f1b625460bc494b771f0e0ed796eac5d1da03523b036625/gltf-model/ab3/ab3f8a81-f0bc-4d18-a0b5-01fba676ab04/bicycle.glb",
+                  "animation": true,
+                  "animationName": null,
+                  "loop": true,
+                  "speed": 1,
+                  "translation": [
+                    -0.008391484007006511, 0.00018734166224021465, 0
+                  ],
+                  "scale": [
+                    1.1897740793455898, 1.1897740793455898, 1.1897740793455898
+                  ],
+                  "rotation": [0, 0, 116.33841132283135],
+                  "fixSizeOnZoom": -1,
+                  "shader": "pbr",
+                  "uniforms": {
+                    "polygonFill": [1, 1, 1, 1],
+                    "polygonOpacity": 1,
+                    "baseColorIntensity": 1,
+                    "outputSRGB": 1
+                  }
+                },
+                "id": "data0"
+              },
+              "zoomOnAdded": 22
+            },
+            {
+              "coordinates": {
+                "x": 116.90302252160222,
+                "y": 39.58213124128858
+              },
+              "options": {
+                "symbol": {
+                  "visible": true,
+                  "bloom": false,
+                  "ssr": false,
+                  "shadow": true,
+                  "url": "./res/temp-resources/bb501d57e1f55bcc7f1b625460bc494b771f0e0ed796eac5d1da03523b036625/gltf-model/3b1/3b1a8fdd-0a75-4583-8bd0-e21c249556fe/motorCar.glb",
+                  "animation": true,
+                  "animationName": null,
+                  "loop": true,
+                  "speed": 1,
+                  "translation": [
+                    -0.016556294955080375, 0.013382199831539765, 0
+                  ],
+                  "scale": [
+                    2.570831562199594, 2.570831562199594, 2.570831562199594
+                  ],
+                  "rotation": [0, 0, 115.87315464980811],
+                  "fixSizeOnZoom": -1,
+                  "shader": "pbr",
+                  "uniforms": {
+                    "polygonFill": [1, 1, 1, 1],
+                    "polygonOpacity": 1,
+                    "baseColorIntensity": 1,
+                    "outputSRGB": 1
+                  }
+                },
+                "id": "data1"
+              },
+              "zoomOnAdded": 22
+            },
+            {
+              "coordinates": {
+                "x": 116.90305417996808,
+                "y": 39.582160919348865
+              },
+              "options": {
+                "symbol": {
+                  "visible": true,
+                  "bloom": false,
+                  "ssr": false,
+                  "shadow": true,
+                  "url": "./res/temp-resources/bb501d57e1f55bcc7f1b625460bc494b771f0e0ed796eac5d1da03523b036625/gltf-model/6d4/6d462033-aa8c-44dc-96cd-6198beb0c594/people.glb",
+                  "animation": true,
+                  "animationName": null,
+                  "loop": true,
+                  "speed": 1,
+                  "translation": [0, 0, 0],
+                  "scale": [1, 1, 1],
+                  "rotation": [0, 0, 97.78581065565065],
+                  "fixSizeOnZoom": -1,
+                  "shader": "pbr",
+                  "uniforms": {
+                    "polygonFill": [1, 1, 1, 1],
+                    "polygonOpacity": 1,
+                    "baseColorIntensity": 1,
+                    "outputSRGB": 1
+                  }
+                },
+                "id": "data2"
+              },
+              "zoomOnAdded": 22
+            }
+          ]
+        }
+      ],
+      "options": {
+        "sceneConfig": {
+          "environment": {
+            "enable": true,
+            "mode": 0,
+            "level": 0,
+            "brightness": 0
+          },
+          "shadow": {
+            "type": "esm",
+            "enable": true,
+            "quality": "high",
+            "opacity": 0.5,
+            "color": [0, 0, 0],
+            "blurOffset": 1
+          },
+          "postProcess": {
+            "enable": true,
+            "antialias": {
+              "enable": true,
+              "taa": true,
+              "jitterRatio": 0.25
+            },
+            "ssr": {
+              "enable": true
+            },
+            "bloom": {
+              "enable": true,
+              "threshold": 0,
+              "factor": 0.4,
+              "radius": 0.304
+            },
+            "ssao": {
+              "enable": true,
+              "bias": 0.08,
+              "radius": 0.08,
+              "intensity": 1.5
+            },
+            "sharpen": {
+              "enable": true,
+              "factor": 0.2
+            },
+            "outline": {
+              "enable": true,
+              "outlineFactor": 0.3,
+              "highlightFactor": 0.2,
+              "outlineWidth": 1,
+              "outlineColor": [1, 1, 0]
+            }
+          },
+          "ground": {
+            "enable": true,
+            "renderPlugin": {
+              "type": "lit"
+            },
+            "symbol": {
+              "polygonFill": [0.54, 0.54, 0.54, 1],
+              "polygonOpacity": 1,
+              "ssr": false,
+              "material": {
+                "baseColorTexture": null,
+                "baseColorFactor": [0, 0, 0, 1],
+                "hsv": [0, 0, 0],
+                "baseColorIntensity": 1,
+                "contrast": 1,
+                "outputSRGB": 1,
+                "metallicRoughnessTexture": null,
+                "roughnessFactor": 0.4,
+                "metallicFactor": 0,
+                "normalTexture": null,
+                "uvScale": [1, 1],
+                "uvOffset": [0, 0],
+                "uvRotation": 0,
+                "uvOffsetAnim": [0, 0],
+                "normalMapFactor": 1,
+                "normalMapFlipY": 0,
+                "clearCoatThickness": 5,
+                "clearCoatFactor": 0,
+                "clearCoatIor": 1.4,
+                "clearCoatRoughnessFactor": 0.04,
+                "occlusionTexture": null,
+                "emissiveTexture": null,
+                "emissiveFactor": [0, 0, 0],
+                "emitColorFactor": 1,
+                "emitMultiplicative": 0
+              }
+            },
+            "extras": {
+              "currentMaterial": ""
+            }
+          }
+        }
+      }
+    }
+  ]
+}
