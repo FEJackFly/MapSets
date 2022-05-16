@@ -1,11 +1,11 @@
 {
   "jsonVersion": "1.0",
-  "version": "1.0.0-rc.1",
+  "version": "1.0.0-rc.4",
   "extent": {
-    "xmin": 116.90189444639532,
-    "ymin": 39.573347749123826,
-    "xmax": 116.91251355877955,
-    "ymax": 39.58250560349197
+    "xmin": 116.90267400995344,
+    "ymin": 39.57410143104502,
+    "xmax": 116.91101844109812,
+    "ymax": 39.58248462675553
   },
   "options": {
     "spatialReference": {},
@@ -16,7 +16,7 @@
       },
       "ambient": {
         "resource": {
-          "url": "./res/temp-resources/bb501d57e1f55bcc7f1b625460bc494b771f0e0ed796eac5d1da03523b036625/hdr/2c4/2c49998b-8c3e-4ced-b98e-59cba68d5e05/sunset_in_the_chalk_quarry_1k.hdr",
+          "url": "/hdr/env.hdr",
           "sh": [
             0.24474610063681917, 0.32115384670346975, 0.40525010696354086,
             0.0204494374531686, 0.011639124894616857, 0.007904154556549333,
@@ -41,23 +41,23 @@
     "draggable": true,
     "renderable": true,
     "center": {
-      "x": 116.9030258529283,
-      "y": 39.582117087174794
+      "x": 116.9030242624957,
+      "y": 39.58211657191029
     },
     "zoom": 21.713569954192142,
-    "bearing": 154.80000000000018,
-    "pitch": 70.80000000000008
+    "bearing": 152.4000000000001,
+    "pitch": 73.20000000000014
   },
   "layers": [
     {
       "type": "GroupGLLayer",
-      "id": "group",
+      "id": "groupGLLayer",
       "layers": [
         {
           "type": "GeoJSONVectorTileLayer",
           "id": "highway",
           "options": {
-            "data": "./res/temp-resources/bb501d57e1f55bcc7f1b625460bc494b771f0e0ed796eac5d1da03523b036625/geojson/f75/f75d8e64-1eab-4642-963b-6beec8871fd3/data.geojson",
+            "data": "geojson/highway.json",
             "spatialReference": null,
             "style": {
               "style": [
@@ -111,7 +111,7 @@
                   "bloom": false,
                   "ssr": false,
                   "shadow": true,
-                  "url": "./res/temp-resources/bb501d57e1f55bcc7f1b625460bc494b771f0e0ed796eac5d1da03523b036625/gltf-model/ab3/ab3f8a81-f0bc-4d18-a0b5-01fba676ab04/bicycle.glb",
+                  "url": "/glb/bicycle.glb",
                   "animation": true,
                   "animationName": null,
                   "loop": true,
@@ -147,7 +147,7 @@
                   "bloom": false,
                   "ssr": false,
                   "shadow": true,
-                  "url": "./res/temp-resources/bb501d57e1f55bcc7f1b625460bc494b771f0e0ed796eac5d1da03523b036625/gltf-model/3b1/3b1a8fdd-0a75-4583-8bd0-e21c249556fe/motorCar.glb",
+                  "url": "glb/motorCar.glb",
                   "animation": true,
                   "animationName": null,
                   "loop": true,
@@ -174,6 +174,42 @@
             },
             {
               "coordinates": {
+                "x": 116.90308216543804,
+                "y": 39.58202430514976
+              },
+              "options": {
+                "symbol": {
+                  "visible": true,
+                  "bloom": false,
+                  "ssr": false,
+                  "shadow": true,
+                  "url": "glb/head.glb",
+                  "animation": true,
+                  "animationName": null,
+                  "loop": true,
+                  "speed": 1,
+                  "translation": [
+                    -0.004580773616908118, 0.01569142779771937, 0
+                  ],
+                  "scale": [
+                    2.570831562199594, 2.570831562199594, 2.570831562199594
+                  ],
+                  "rotation": [0, 0, 115.87315464980811],
+                  "fixSizeOnZoom": -1,
+                  "shader": "pbr",
+                  "uniforms": {
+                    "polygonFill": [1, 1, 1, 1],
+                    "polygonOpacity": 1,
+                    "baseColorIntensity": 1,
+                    "outputSRGB": 1
+                  }
+                },
+                "id": "car"
+              },
+              "zoomOnAdded": 22
+            },
+            {
+              "coordinates": {
                 "x": 116.90305417996808,
                 "y": 39.582160919348865
               },
@@ -183,7 +219,7 @@
                   "bloom": false,
                   "ssr": false,
                   "shadow": true,
-                  "url": "./res/temp-resources/bb501d57e1f55bcc7f1b625460bc494b771f0e0ed796eac5d1da03523b036625/gltf-model/6d4/6d462033-aa8c-44dc-96cd-6198beb0c594/people.glb",
+                  "url": "glb/people.glb",
                   "animation": true,
                   "animationName": null,
                   "loop": true,
@@ -208,6 +244,8 @@
         }
       ],
       "options": {
+        "hitDetect": false,
+        "geometryEvents": false,
         "sceneConfig": {
           "environment": {
             "enable": true,
