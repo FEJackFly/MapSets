@@ -11,7 +11,7 @@
     "spatialReference": {},
     "lights": {
       "directional": {
-        "direction": [1, 0, -1],
+        "direction": [2, 0, -1],
         "color": [1, 1, 1]
       },
       "ambient": {
@@ -71,7 +71,7 @@
                     "type": "line"
                   },
                   "symbol": {
-                    "lineBloom": true,
+                    "lineBloom": false,
                     "lineCap": "butt",
                     "lineColor": [0.73, 0.73, 0.73, 1],
                     "lineDasharray": [0, 0, 0, 0],
@@ -108,7 +108,7 @@
               "options": {
                 "symbol": {
                   "visible": true,
-                  "bloom": false,
+                  "bloom": true,
                   "ssr": false,
                   "shadow": true,
                   "url": "/glb/bicycle.glb",
@@ -248,21 +248,21 @@
         "geometryEvents": false,
         "sceneConfig": {
           "environment": {
-            "enable": true,
+            "enable": false,
             "mode": 0,
             "level": 0,
             "brightness": 0
           },
           "shadow": {
             "type": "esm",
-            "enable": true,
+            "enable": false,
             "quality": "high",
             "opacity": 0.5,
             "color": [0, 0, 0],
             "blurOffset": 1
           },
           "postProcess": {
-            "enable": true,
+            "enable": false,
             "antialias": {
               "enable": true,
               "taa": true,
@@ -296,7 +296,7 @@
             }
           },
           "ground": {
-            "enable": true,
+            "enable": false,
             "renderPlugin": {
               "type": "lit"
             },
