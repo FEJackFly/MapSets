@@ -5,8 +5,9 @@ import { GroupGLLayer } from "@maptalks/gl";
 import { GeoJSONVectorTileLayer } from "@maptalks/vt";
 import { GLTFMarker, GLTFLayer } from "@maptalks/gltf-layer";
 import { TransformControl } from "@maptalks/transform-control";
-import * as Stats from "stats.js";
 import "@maptalks/transcoders.draco";
+import * as Stats from "stats.js";
+import TWEEN from "@tweenjs/tween.js";
 
 import MapLoader from "../utils/MapLoader";
 import data from "../../public/map.json";
@@ -73,6 +74,25 @@ const initEvents = (map, groupGLLayer) => {
 };
 onMounted(() => {
   init();
+
+  const coords = { x: 116.90215552606446, y: 39.58353646081784 }; // Start at (0, 0)
+  const tween = new TWEEN.Tween(coords) // Create a new tween that modifies 'coords'.
+    .to({ x: 116.90396874747432, y: 39.58049385041008 }, 50000) // Move to (300, 200) in 1 second.
+    // .easing(TWEEN.Easing.Quadratic.Out) // Use an easing function to make the animation smooth.
+    .onUpdate(() => {
+      // Called after tween.js updates 'coords'.
+      // Move 'box' to the position described by 'coords' with a CSS translation.
+      const groupGLLayer = state.map.getLayer("groupGLLayer");
+      if (groupGLLayer) {
+        state.map.setCenter(coords);
+        state.map
+          .getLayer("groupGLLayer")
+          .getLayer("gltfs")
+          .getGeometryById("car")
+          .setCoordinates(coords);
+      }
+    });
+  tween.start(); // Start the tween immediately.
 });
 onUnmounted(() => {
   state.map.remove();
@@ -83,8 +103,8 @@ let num = 0;
 const animate = () => {
   stats.update();
   num += 0.5;
-  state.map.setBearing(num);
-
+  // state.map.setBearing(num);
+  TWEEN.update();
   requestAnimationFrame(animate);
 };
 </script>
