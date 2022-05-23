@@ -11,7 +11,7 @@
     "spatialReference": {},
     "lights": {
       "directional": {
-        "direction": [2, 0, -1],
+        "direction": [0, 0, -1],
         "color": [1, 1, 1]
       },
       "ambient": {

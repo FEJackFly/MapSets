@@ -117,6 +117,5 @@ const animate = () => {
 #map {
   width: 100%;
   height: 100%;
-  background-color: rgb(24, 38, 81);
 }
 </style>
