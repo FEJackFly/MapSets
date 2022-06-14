@@ -74,7 +74,7 @@
                     "lineBloom": false,
                     "lineCap": "butt",
                     "lineColor": [0.73, 0.73, 0.73, 1],
-                    "lineDasharray": [0, 0, 0, 0],
+                    "lineDasharray": [100, 100, 100, 100],
                     "lineDashColor": [1, 1, 1, 0],
                     "lineDx": 0,
                     "lineDy": 0,
@@ -86,7 +86,7 @@
                     "lineStrokeWidth": 0,
                     "lineStrokeColor": [0, 0, 0, 0],
                     "lineJoinPatternMode": 0,
-                    "lineWidth": 2,
+                    "lineWidth": 5,
                     "visible": true
                   }
                 }
@@ -248,21 +248,21 @@
         "geometryEvents": false,
         "sceneConfig": {
           "environment": {
-            "enable": false,
+            "enable": true,
             "mode": 0,
             "level": 0,
             "brightness": 0
           },
           "shadow": {
             "type": "esm",
-            "enable": false,
+            "enable": true,
             "quality": "high",
             "opacity": 0.5,
             "color": [0, 0, 0],
             "blurOffset": 1
           },
           "postProcess": {
-            "enable": false,
+            "enable": true,
             "antialias": {
               "enable": true,
               "taa": true,
@@ -296,40 +296,17 @@
             }
           },
           "ground": {
-            "enable": false,
+            "enable": true,
             "renderPlugin": {
               "type": "lit"
             },
             "symbol": {
-              "polygonFill": [0.54, 0.54, 0.54, 1],
               "polygonOpacity": 1,
-              "ssr": false,
               "material": {
-                "baseColorTexture": null,
-                "baseColorFactor": [0, 0, 0, 1],
-                "hsv": [0, 0, 0],
-                "baseColorIntensity": 1,
-                "contrast": 1,
-                "outputSRGB": 1,
-                "metallicRoughnessTexture": null,
-                "roughnessFactor": 0.4,
-                "metallicFactor": 0,
-                "normalTexture": null,
-                "uvScale": [1, 1],
-                "uvOffset": [0, 0],
-                "uvRotation": 0,
-                "uvOffsetAnim": [0, 0],
-                "normalMapFactor": 1,
-                "normalMapFlipY": 0,
-                "clearCoatThickness": 5,
-                "clearCoatFactor": 0,
-                "clearCoatIor": 1.4,
-                "clearCoatRoughnessFactor": 0.04,
-                "occlusionTexture": null,
-                "emissiveTexture": null,
-                "emissiveFactor": [0, 0, 0],
-                "emitColorFactor": 1,
-                "emitMultiplicative": 0
+                "baseColorFactor": [0.48235, 0.48235, 0.48235, 1],
+                "hsv": [0, 0, -0.532],
+                "roughnessFactor": 0.22,
+                "metallicFactor": 0.58
               }
             },
             "extras": {
