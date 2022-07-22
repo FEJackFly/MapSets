@@ -8,18 +8,18 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@maptalks/gl": "^0.70.3",
-    "@maptalks/gltf-layer": "^0.33.5",
-    "@maptalks/transcoders.draco": "^0.70.0",
-    "@maptalks/transform-control": "^0.6.1",
-    "@maptalks/vt": "^0.67.1",
+    "@maptalks/gl-layers": "^0.7.1",
+    "@maptalks/transcoders.draco": "^0.73.0",
     "@turf/turf": "^6.5.0",
     "@tweenjs/tween.js": "^18.6.4",
+    "axios": "^0.27.2",
     "less": "^4.1.3",
-    "maptalks": "^1.0.0-rc.6",
+    "maptalks": "^v1.0.0-rc.8",
+    "maptalks.three": "^0.27.3",
     "npm": "^8.10.0",
     "stats.js": "^0.17.0",
     "three": "^0.140.2",
+    "utm": "^1.1.1",
     "vue": "^3.2.25"
   },
   "devDependencies": {

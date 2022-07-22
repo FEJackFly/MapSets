@@ -1,0 +1,580 @@
+{
+    "jsonVersion": "1.0",
+    "version": "1.0.0-rc.8",
+    "extent": {
+        "xmin": 116.9029072375755,
+        "ymin": 39.58175660070569,
+        "xmax": 116.90336164065161,
+        "ymax": 39.5821186984285
+    },
+    "options": {
+        "spatialReference": {
+            "projection": "identity"
+        },
+        "lights": {
+            "directional": {
+                "direction": [
+                    1,
+                    0,
+                    -1
+                ],
+                "color": [
+                    1,
+                    1,
+                    1
+                ]
+            },
+            "ambient": {
+                "resource": {
+                    "url": "/hdr/env.hdr"
+                },
+                "exposure": 0.8,
+                "hsv": [
+                    0,
+                    0,
+                    0
+                ],
+                "orientation": 1,
+                "prefilterCubeSize": 64
+            }
+        },
+        "seamlessZoom": true,
+        "doubleClickZoom": false,
+        "zoomable": true,
+        "draggable": true,
+        "center": [
+            566662.8519457029,
+            4318402.301882369
+        ],
+        "zoom": 0,
+        "bearing": 146.17611875603257,
+        "pitch": 23.200000000000113
+    },
+    "layers": [
+        {
+            "type": "GroupGLLayer",
+            "id": "groupGLLayer",
+            "layers": [
+                {
+                    "type": "PolygonLayer",
+                    "id": "vector",
+                    "options": {
+                        "sceneConfig": {
+                            "blendSrc": "src alpha"
+                        }
+                    },
+                    "geometries": []
+                },
+                {
+                    "type": "GeoJSONVectorTileLayer",
+                    "id": "geojsonMap",
+                    "options": {
+                        "data": "geojson/highway.json",
+                        "style": {
+                            "style": [
+                                {
+                                    "filter": [
+                                        "all",
+                                        [
+                                            "==",
+                                            "type",
+                                            0
+                                        ]
+                                    ],
+                                    "renderPlugin": {
+                                        "dataConfig": {
+                                            "type": "line"
+                                        },
+                                        "sceneConfig": {},
+                                        "type": "line"
+                                    },
+                                    "symbol": {
+                                        "lineBloom": false,
+                                        "lineCap": "butt",
+                                        "lineColor": [
+                                            0.73,
+                                            0.73,
+                                            0.73,
+                                            1
+                                        ],
+                                        "lineDasharray": [
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "lineDashColor": [
+                                            1,
+                                            1,
+                                            1,
+                                            0
+                                        ],
+                                        "lineDx": 0,
+                                        "lineDy": 0,
+                                        "lineGapWidth": 0,
+                                        "lineJoin": "miter",
+                                        "lineOpacity": 1,
+                                        "linePatternAnimSpeed": 0,
+                                        "linePatternFile": null,
+                                        "lineStrokeWidth": 0,
+                                        "lineStrokeColor": [
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "lineJoinPatternMode": 0,
+                                        "lineWidth": 2,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "filter": [
+                                        "all",
+                                        [
+                                            "==",
+                                            "type",
+                                            1
+                                        ]
+                                    ],
+                                    "renderPlugin": {
+                                        "dataConfig": {
+                                            "type": "line"
+                                        },
+                                        "sceneConfig": {},
+                                        "type": "line"
+                                    },
+                                    "symbol": {
+                                        "lineBloom": true,
+                                        "lineCap": "butt",
+                                        "lineColor": [
+                                            0.73,
+                                            0.73,
+                                            0.73,
+                                            1
+                                        ],
+                                        "lineDasharray": [
+                                            150,
+                                            150,
+                                            150,
+                                            150
+                                        ],
+                                        "lineDashColor": [
+                                            0.73,
+                                            0.73,
+                                            0.73,
+                                            0
+                                        ],
+                                        "lineDx": 0,
+                                        "lineDy": 0,
+                                        "lineGapWidth": 0,
+                                        "lineJoin": "miter",
+                                        "lineOpacity": 1,
+                                        "linePatternAnimSpeed": 0,
+                                        "linePatternFile": null,
+                                        "lineStrokeWidth": 0,
+                                        "lineStrokeColor": [
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "lineJoinPatternMode": 0,
+                                        "lineWidth": {
+                                            "stops": [
+                                                [
+                                                    16,
+                                                    2
+                                                ],
+                                                [
+                                                    22,
+                                                    10
+                                                ]
+                                            ]
+                                        },
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "filter": [
+                                        "all",
+                                        [
+                                            "==",
+                                            "type",
+                                            4
+                                        ]
+                                    ],
+                                    "renderPlugin": {
+                                        "dataConfig": {
+                                            "type": "line"
+                                        },
+                                        "sceneConfig": {},
+                                        "type": "line"
+                                    },
+                                    "symbol": {
+                                        "lineBloom": false,
+                                        "lineCap": "butt",
+                                        "lineColor": [
+                                            0.73,
+                                            0.73,
+                                            0.73,
+                                            1
+                                        ],
+                                        "lineDasharray": [
+                                            10,
+                                            10,
+                                            10,
+                                            10
+                                        ],
+                                        "lineDashColor": [
+                                            1,
+                                            1,
+                                            1,
+                                            0
+                                        ],
+                                        "lineDx": 0,
+                                        "lineDy": 0,
+                                        "lineGapWidth": 0,
+                                        "lineJoin": "miter",
+                                        "lineOpacity": 1,
+                                        "linePatternAnimSpeed": 0,
+                                        "linePatternFile": null,
+                                        "lineStrokeWidth": 0,
+                                        "lineStrokeColor": [
+                                            0,
+                                            0,
+                                            0,
+                                            0
+                                        ],
+                                        "lineJoinPatternMode": 0,
+                                        "lineWidth": 2,
+                                        "visible": true
+                                    }
+                                }
+                            ],
+                            "featureStyle": []
+                        }
+                    }
+                },
+                {
+                    "type": "LineStringLayer",
+                    "id": "planningLine",
+                    "options": {},
+                    "geometries": []
+                },
+                {
+                    "type": "LineStringLayer",
+                    "id": "realLine",
+                    "options": {},
+                    "geometries": []
+                },
+                {
+                    "type": "GLTFLayer",
+                    "id": "ego",
+                    "options": {},
+                    "geometries": []
+                },
+                {
+                    "type": "GLTFLayer",
+                    "id": "gltfs",
+                    "options": {},
+                    "geometries": []
+                },
+                {
+                    "type": "PointLayer",
+                    "id": "map_point",
+                    "options": {
+                        "enableSimplify": false
+                    },
+                    "geometries": []
+                },
+                {
+                    "type": "LineStringLayer",
+                    "id": "map_line",
+                    "options": {
+                        "enableSimplify": false,
+                        "style": [
+                            {
+                                "filter": [
+                                    "all",
+                                    [
+                                        "==",
+                                        "type",
+                                        0
+                                    ]
+                                ],
+                                "renderPlugin": {
+                                    "dataConfig": {
+                                        "type": "line"
+                                    },
+                                    "sceneConfig": {},
+                                    "type": "line"
+                                },
+                                "symbol": {
+                                    "lineBloom": false,
+                                    "lineCap": "butt",
+                                    "lineColor": [
+                                        1,
+                                        0,
+                                        0,
+                                        1
+                                    ],
+                                    "lineDasharray": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "lineDashColor": [
+                                        1,
+                                        1,
+                                        1,
+                                        0
+                                    ],
+                                    "lineDx": 0,
+                                    "lineDy": 0,
+                                    "lineGapWidth": 0,
+                                    "lineJoin": "miter",
+                                    "lineOpacity": 1,
+                                    "linePatternAnimSpeed": 0,
+                                    "linePatternFile": null,
+                                    "lineStrokeWidth": 0,
+                                    "lineStrokeColor": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "lineJoinPatternMode": 0,
+                                    "lineWidth": 20,
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "filter": [
+                                    "all",
+                                    [
+                                        "==",
+                                        "type",
+                                        1
+                                    ]
+                                ],
+                                "renderPlugin": {
+                                    "dataConfig": {
+                                        "type": "line"
+                                    },
+                                    "sceneConfig": {},
+                                    "type": "line"
+                                },
+                                "symbol": {
+                                    "lineBloom": true,
+                                    "lineCap": "butt",
+                                    "lineColor": [
+                                        1,
+                                        0,
+                                        0,
+                                        1
+                                    ],
+                                    "lineDasharray": [
+                                        150,
+                                        150,
+                                        150,
+                                        150
+                                    ],
+                                    "lineDashColor": [
+                                        0.73,
+                                        0.73,
+                                        0.73,
+                                        0
+                                    ],
+                                    "lineDx": 0,
+                                    "lineDy": 0,
+                                    "lineGapWidth": 0,
+                                    "lineJoin": "miter",
+                                    "lineOpacity": 1,
+                                    "linePatternAnimSpeed": 0,
+                                    "linePatternFile": null,
+                                    "lineStrokeWidth": 0,
+                                    "lineStrokeColor": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "lineJoinPatternMode": 0,
+                                    "lineWidth": {
+                                        "stops": [
+                                            [
+                                                16,
+                                                2
+                                            ],
+                                            [
+                                                22,
+                                                10
+                                            ]
+                                        ]
+                                    },
+                                    "visible": true
+                                }
+                            },
+                            {
+                                "filter": [
+                                    "all",
+                                    [
+                                        "==",
+                                        "type",
+                                        4
+                                    ]
+                                ],
+                                "renderPlugin": {
+                                    "dataConfig": {
+                                        "type": "line"
+                                    },
+                                    "sceneConfig": {},
+                                    "type": "line"
+                                },
+                                "symbol": {
+                                    "lineBloom": false,
+                                    "lineCap": "butt",
+                                    "lineColor": [
+                                        1,
+                                        0,
+                                        0,
+                                        1
+                                    ],
+                                    "lineDasharray": [
+                                        10,
+                                        10,
+                                        10,
+                                        10
+                                    ],
+                                    "lineDashColor": [
+                                        1,
+                                        1,
+                                        1,
+                                        0
+                                    ],
+                                    "lineDx": 0,
+                                    "lineDy": 0,
+                                    "lineGapWidth": 0,
+                                    "lineJoin": "miter",
+                                    "lineOpacity": 1,
+                                    "linePatternAnimSpeed": 0,
+                                    "linePatternFile": null,
+                                    "lineStrokeWidth": 0,
+                                    "lineStrokeColor": [
+                                        0,
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "lineJoinPatternMode": 0,
+                                    "lineWidth": 2,
+                                    "visible": true
+                                }
+                            }
+                        ]
+                    },
+                    "geometries": []
+                },
+                {
+                    "type": "PolygonLayer",
+                    "id": "map_polygon",
+                    "options": {
+                        "enableSimplify": false
+                    },
+                    "geometries": []
+                }
+            ],
+            "options": {
+                "hitDetect": false,
+                "geometryEvents": false,
+                "sceneConfig": {
+                    "environment": {
+                        "enable": false,
+                        "mode": 0,
+                        "level": 0,
+                        "brightness": 0
+                    },
+                    "shadow": {
+                        "type": "esm",
+                        "enable": true,
+                        "quality": "high",
+                        "opacity": 0.5,
+                        "color": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "blurOffset": 1
+                    },
+                    "postProcess": {
+                        "enable": false,
+                        "antialias": {
+                            "enable": true,
+                            "taa": true,
+                            "jitterRatio": 0.25
+                        },
+                        "ssr": {
+                            "enable": true
+                        },
+                        "bloom": {
+                            "enable": true,
+                            "threshold": 0,
+                            "factor": 0.4,
+                            "radius": 0.304
+                        },
+                        "ssao": {
+                            "enable": true,
+                            "bias": 0.08,
+                            "radius": 0.08,
+                            "intensity": 1.5
+                        },
+                        "sharpen": {
+                            "enable": true,
+                            "factor": 0.2
+                        },
+                        "outline": {
+                            "enable": true,
+                            "outlineFactor": 0.3,
+                            "highlightFactor": 0.2,
+                            "outlineWidth": 1,
+                            "outlineColor": [
+                                1,
+                                1,
+                                0
+                            ]
+                        }
+                    },
+                    "ground": {
+                        "enable": false,
+                        "renderPlugin": {
+                            "type": "lit"
+                        },
+                        "symbol": {
+                            "polygonOpacity": 1,
+                            "material": {
+                                "baseColorFactor": [
+                                    0.48235,
+                                    0.48235,
+                                    0.48235,
+                                    1
+                                ],
+                                "hsv": [
+                                    0,
+                                    0,
+                                    -0.532
+                                ],
+                                "roughnessFactor": 0.22,
+                                "metallicFactor": 0.58
+                            }
+                        },
+                        "extras": {
+                            "currentMaterial": ""
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

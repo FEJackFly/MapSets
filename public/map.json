@@ -1,320 +1,259 @@
 {
-  "jsonVersion": "1.0",
-  "version": "1.0.0-rc.4",
-  "extent": {
-    "xmin": 116.90267400995344,
-    "ymin": 39.57410143104502,
-    "xmax": 116.91101844109812,
-    "ymax": 39.58248462675553
-  },
-  "options": {
-    "spatialReference": {},
-    "lights": {
-      "directional": {
-        "direction": [0, 0, -1],
-        "color": [1, 1, 1]
-      },
-      "ambient": {
-        "resource": {
-          "url": "/hdr/env.hdr",
-          "sh": [
-            0.24474610063681917, 0.32115384670346975, 0.40525010696354086,
-            0.0204494374531686, 0.011639124894616857, 0.007904154556549333,
-            0.04210623283538904, 0.028445546201752714, 0.01951303032759883,
-            -0.01036706582884306, 0.0018392637833096377, 0.01630117798108209,
-            -0.0017000197301937506, -0.0001370016800420307, 0.00118491874770844,
-            -0.0058426257845160786, -0.004118263767397141,
-            -0.0031268382092201137, 0.013117593095335462, 0.004496614935685468,
-            -0.0003262775591732822, -0.041157476583825, 0.0010309220676732547,
-            0.03982223069378102, -0.014053046452343603, -0.011277575549746541,
-            -0.008628347725032457
-          ]
+    "jsonVersion": "1.0",
+    "version": "1.0.0-rc.8",
+    "extent": {
+        "xmin": 116.9029072375755,
+        "ymin": 39.58175660070569,
+        "xmax": 116.90336164065161,
+        "ymax": 39.5821186984285
+    },
+    "options": {
+        "lights": {
+            "directional": {
+                "direction": [1, 0, -1],
+                "color": [1, 1, 1]
+            },
+            "ambient": {
+                "resource": {
+                    "url": "/hdr/env.hdr"
+                },
+                "exposure": 0.8,
+                "hsv": [0, 0, 0],
+                "orientation": 1,
+                "prefilterCubeSize": 64
+            }
         },
-        "exposure": 1,
-        "hsv": [0, 0, 0],
-        "orientation": 0,
-        "prefilterCubeSize": 128
-      }
+        "seamlessZoom": true,
+        "doubleClickZoom": false,
+        "zoomable": true,
+        "draggable": true,
+        "center": [117.03032294469759, 39.42372065518668],
+        "zoom": 22,
+        "bearing": 146.17611875603257,
+        "pitch": 23.200000000000113
     },
-    "seamlessZoom": true,
-    "zoomable": true,
-    "draggable": true,
-    "renderable": true,
-    "center": {
-      "x": 116.9030242624957,
-      "y": 39.58211657191029
-    },
-    "zoom": 21.713569954192142,
-    "bearing": 152.4000000000001,
-    "pitch": 73.20000000000014
-  },
-  "layers": [
-    {
-      "type": "GroupGLLayer",
-      "id": "groupGLLayer",
-      "layers": [
+    "layers": [
         {
-          "type": "GeoJSONVectorTileLayer",
-          "id": "highway",
-          "options": {
-            "data": "geojson/highway.json",
-            "spatialReference": null,
-            "style": {
-              "style": [
+            "type": "GroupGLLayer",
+            "id": "groupGLLayer",
+            "layers": [
                 {
-                  "filter": true,
-                  "renderPlugin": {
-                    "dataConfig": {
-                      "type": "line"
-                    },
-                    "sceneConfig": {},
-                    "type": "line"
-                  },
-                  "symbol": {
-                    "lineBloom": false,
-                    "lineCap": "butt",
-                    "lineColor": [0.73, 0.73, 0.73, 1],
-                    "lineDasharray": [100, 100, 100, 100],
-                    "lineDashColor": [1, 1, 1, 0],
-                    "lineDx": 0,
-                    "lineDy": 0,
-                    "lineGapWidth": 0,
-                    "lineJoin": "miter",
-                    "lineOpacity": 1,
-                    "linePatternAnimSpeed": 0,
-                    "linePatternFile": null,
-                    "lineStrokeWidth": 0,
-                    "lineStrokeColor": [0, 0, 0, 0],
-                    "lineJoinPatternMode": 0,
-                    "lineWidth": 5,
-                    "visible": true
-                  }
+                    "type": "PolygonLayer",
+                    "id": "vector",
+                    "options": {},
+                    "geometries": []
+                },
+                {
+                    "type": "GeoJSONVectorTileLayer",
+                    "id": "geojsonMap",
+                    "options": {
+                        "data": "geojson/all.json",
+                        "style": {
+                            "style": [
+                                {
+                                    "filter": ["all", ["==", "type", 0]],
+                                    "renderPlugin": {
+                                        "dataConfig": {
+                                            "type": "line"
+                                        },
+                                        "sceneConfig": {},
+                                        "type": "line"
+                                    },
+                                    "symbol": {
+                                        "lineBloom": false,
+                                        "lineCap": "butt",
+                                        "lineColor": [0.73, 0.73, 0.73, 1],
+                                        "lineDasharray": [0, 0, 0, 0],
+                                        "lineDashColor": [1, 1, 1, 0],
+                                        "lineDx": 0,
+                                        "lineDy": 0,
+                                        "lineGapWidth": 0,
+                                        "lineJoin": "miter",
+                                        "lineOpacity": 1,
+                                        "linePatternAnimSpeed": 0,
+                                        "linePatternFile": null,
+                                        "lineStrokeWidth": 0,
+                                        "lineStrokeColor": [0, 0, 0, 0],
+                                        "lineJoinPatternMode": 0,
+                                        "lineWidth": 2,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "filter": ["all", ["==", "type", 1]],
+                                    "renderPlugin": {
+                                        "dataConfig": {
+                                            "type": "line"
+                                        },
+                                        "sceneConfig": {},
+                                        "type": "line"
+                                    },
+                                    "symbol": {
+                                        "lineBloom": true,
+                                        "lineCap": "butt",
+                                        "lineColor": [0.73, 0.73, 0.73, 1],
+                                        "lineDasharray": [150, 150, 150, 150],
+                                        "lineDashColor": [0.73, 0.73, 0.73, 0],
+                                        "lineDx": 0,
+                                        "lineDy": 0,
+                                        "lineGapWidth": 0,
+                                        "lineJoin": "miter",
+                                        "lineOpacity": 1,
+                                        "linePatternAnimSpeed": 0,
+                                        "linePatternFile": null,
+                                        "lineStrokeWidth": 0,
+                                        "lineStrokeColor": [0, 0, 0, 0],
+                                        "lineJoinPatternMode": 0,
+                                        "lineWidth": {
+                                            "stops": [
+                                                [16, 2],
+                                                [22, 10]
+                                            ]
+                                        },
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "filter": ["all", ["==", "type", 4]],
+                                    "renderPlugin": {
+                                        "dataConfig": {
+                                            "type": "line"
+                                        },
+                                        "sceneConfig": {},
+                                        "type": "line"
+                                    },
+                                    "symbol": {
+                                        "lineBloom": false,
+                                        "lineCap": "butt",
+                                        "lineColor": [0.73, 0.73, 0.73, 1],
+                                        "lineDasharray": [10, 10, 10, 10],
+                                        "lineDashColor": [1, 1, 1, 0],
+                                        "lineDx": 0,
+                                        "lineDy": 0,
+                                        "lineGapWidth": 0,
+                                        "lineJoin": "miter",
+                                        "lineOpacity": 1,
+                                        "linePatternAnimSpeed": 0,
+                                        "linePatternFile": null,
+                                        "lineStrokeWidth": 0,
+                                        "lineStrokeColor": [0, 0, 0, 0],
+                                        "lineJoinPatternMode": 0,
+                                        "lineWidth": 2,
+                                        "visible": true
+                                    }
+                                }
+                            ],
+                            "featureStyle": []
+                        }
+                    }
+                },
+                {
+                    "type": "LineStringLayer",
+                    "id": "planningLine",
+                    "options": {},
+                    "geometries": []
+                },
+                {
+                    "type": "LineStringLayer",
+                    "id": "realLine",
+                    "options": {},
+                    "geometries": []
+                },
+                {
+                    "type": "GLTFLayer",
+                    "id": "ego",
+                    "options": {},
+                    "geometries": []
+                },
+                {
+                    "type": "GLTFLayer",
+                    "id": "gltfs",
+                    "options": {},
+                    "geometries": []
                 }
-              ],
-              "featureStyle": []
+            ],
+            "options": {
+                "hitDetect": false,
+                "geometryEvents": false,
+                "picking": false,
+                "sceneConfig": {
+                    "environment": {
+                        "enable": true,
+                        "mode": 0,
+                        "level": 0,
+                        "brightness": 0
+                    },
+                    "shadow": {
+                        "type": "esm",
+                        "enable": true,
+                        "quality": "high",
+                        "opacity": 0.5,
+                        "color": [0, 0, 0],
+                        "blurOffset": 1
+                    },
+                    "postProcess": {
+                        "enable": true,
+                        "antialias": {
+                            "enable": true
+                        },
+                        "ssr": {
+                            "enable": false
+                        },
+                        "bloom": {
+                            "enable": false,
+                            "threshold": 0,
+                            "factor": 0.4,
+                            "radius": 0.304
+                        },
+                        "ssao": {
+                            "enable": false,
+                            "bias": 0.08,
+                            "radius": 0.08,
+                            "intensity": 1.5
+                        },
+                        "sharpen": {
+                            "enable": false,
+                            "factor": 0.2
+                        },
+                        "outline": {
+                            "enable": false,
+                            "outlineFactor": 0.3,
+                            "highlightFactor": 0.2,
+                            "outlineWidth": 1,
+                            "outlineColor": [1, 1, 0]
+                        }
+                    },
+                    "ground": {
+                        "enable": true,
+                        "renderPlugin": {
+                            "type": "lit"
+                        },
+                        "symbol": {
+                            "polygonOpacity": 1,
+                            "material": {
+                                "baseColorFactor": [
+                                    0.48235, 0.48235, 0.48235, 1
+                                ],
+                                "hsv": [0, 0, -0.532],
+                                "roughnessFactor": 0.22,
+                                "metallicFactor": 0.58
+                            }
+                        },
+                        "extras": {
+                            "currentMaterial": ""
+                        }
+                    }
+                }
             }
-          }
         },
         {
-          "type": "GLTFLayer",
-          "id": "gltfs",
-          "options": {},
-          "geometries": [
-            {
-              "coordinates": {
-                "x": 116.90297511901508,
-                "y": 39.58212051274981
-              },
-              "options": {
-                "symbol": {
-                  "visible": true,
-                  "bloom": true,
-                  "ssr": false,
-                  "shadow": true,
-                  "url": "/glb/bicycle.glb",
-                  "animation": true,
-                  "animationName": null,
-                  "loop": true,
-                  "speed": 1,
-                  "translation": [
-                    -0.008391484007006511, 0.00018734166224021465, 0
-                  ],
-                  "scale": [
-                    1.1897740793455898, 1.1897740793455898, 1.1897740793455898
-                  ],
-                  "rotation": [0, 0, 116.33841132283135],
-                  "fixSizeOnZoom": -1,
-                  "shader": "pbr",
-                  "uniforms": {
-                    "polygonFill": [1, 1, 1, 1],
-                    "polygonOpacity": 1,
-                    "baseColorIntensity": 1,
-                    "outputSRGB": 1
-                  }
-                },
-                "id": "data0"
-              },
-              "zoomOnAdded": 22
-            },
-            {
-              "coordinates": {
-                "x": 116.90302252160222,
-                "y": 39.58213124128858
-              },
-              "options": {
-                "symbol": {
-                  "visible": true,
-                  "bloom": false,
-                  "ssr": false,
-                  "shadow": true,
-                  "url": "glb/motorCar.glb",
-                  "animation": true,
-                  "animationName": null,
-                  "loop": true,
-                  "speed": 1,
-                  "translation": [
-                    -0.016556294955080375, 0.013382199831539765, 0
-                  ],
-                  "scale": [
-                    2.570831562199594, 2.570831562199594, 2.570831562199594
-                  ],
-                  "rotation": [0, 0, 115.87315464980811],
-                  "fixSizeOnZoom": -1,
-                  "shader": "pbr",
-                  "uniforms": {
-                    "polygonFill": [1, 1, 1, 1],
-                    "polygonOpacity": 1,
-                    "baseColorIntensity": 1,
-                    "outputSRGB": 1
-                  }
-                },
-                "id": "data1"
-              },
-              "zoomOnAdded": 22
-            },
-            {
-              "coordinates": {
-                "x": 116.90308216543804,
-                "y": 39.58202430514976
-              },
-              "options": {
-                "symbol": {
-                  "visible": true,
-                  "bloom": false,
-                  "ssr": false,
-                  "shadow": true,
-                  "url": "glb/head.glb",
-                  "animation": true,
-                  "animationName": null,
-                  "loop": true,
-                  "speed": 1,
-                  "translation": [
-                    -0.004580773616908118, 0.01569142779771937, 0
-                  ],
-                  "scale": [
-                    2.570831562199594, 2.570831562199594, 2.570831562199594
-                  ],
-                  "rotation": [0, 0, 115.87315464980811],
-                  "fixSizeOnZoom": -1,
-                  "shader": "pbr",
-                  "uniforms": {
-                    "polygonFill": [1, 1, 1, 1],
-                    "polygonOpacity": 1,
-                    "baseColorIntensity": 1,
-                    "outputSRGB": 1
-                  }
-                },
-                "id": "car"
-              },
-              "zoomOnAdded": 22
-            },
-            {
-              "coordinates": {
-                "x": 116.90305417996808,
-                "y": 39.582160919348865
-              },
-              "options": {
-                "symbol": {
-                  "visible": true,
-                  "bloom": false,
-                  "ssr": false,
-                  "shadow": true,
-                  "url": "glb/people.glb",
-                  "animation": true,
-                  "animationName": null,
-                  "loop": true,
-                  "speed": 1,
-                  "translation": [0, 0, 0],
-                  "scale": [1, 1, 1],
-                  "rotation": [0, 0, 97.78581065565065],
-                  "fixSizeOnZoom": -1,
-                  "shader": "pbr",
-                  "uniforms": {
-                    "polygonFill": [1, 1, 1, 1],
-                    "polygonOpacity": 1,
-                    "baseColorIntensity": 1,
-                    "outputSRGB": 1
-                  }
-                },
-                "id": "data2"
-              },
-              "zoomOnAdded": 22
-            }
-          ]
+            "hitDetect": false,
+            "geometryEvents": false,
+            "picking": false,
+            "type": "VectorLayer",
+            "id": "vector",
+            "options": {},
+            "geometries": []
         }
-      ],
-      "options": {
-        "hitDetect": false,
-        "geometryEvents": false,
-        "sceneConfig": {
-          "environment": {
-            "enable": true,
-            "mode": 0,
-            "level": 0,
-            "brightness": 0
-          },
-          "shadow": {
-            "type": "esm",
-            "enable": true,
-            "quality": "high",
-            "opacity": 0.5,
-            "color": [0, 0, 0],
-            "blurOffset": 1
-          },
-          "postProcess": {
-            "enable": true,
-            "antialias": {
-              "enable": true,
-              "taa": true,
-              "jitterRatio": 0.25
-            },
-            "ssr": {
-              "enable": true
-            },
-            "bloom": {
-              "enable": true,
-              "threshold": 0,
-              "factor": 0.4,
-              "radius": 0.304
-            },
-            "ssao": {
-              "enable": true,
-              "bias": 0.08,
-              "radius": 0.08,
-              "intensity": 1.5
-            },
-            "sharpen": {
-              "enable": true,
-              "factor": 0.2
-            },
-            "outline": {
-              "enable": true,
-              "outlineFactor": 0.3,
-              "highlightFactor": 0.2,
-              "outlineWidth": 1,
-              "outlineColor": [1, 1, 0]
-            }
-          },
-          "ground": {
-            "enable": true,
-            "renderPlugin": {
-              "type": "lit"
-            },
-            "symbol": {
-              "polygonOpacity": 1,
-              "material": {
-                "baseColorFactor": [0.48235, 0.48235, 0.48235, 1],
-                "hsv": [0, 0, -0.532],
-                "roughnessFactor": 0.22,
-                "metallicFactor": 0.58
-              }
-            },
-            "extras": {
-              "currentMaterial": ""
-            }
-          }
-        }
-      }
-    }
-  ]
+    ]
 }
