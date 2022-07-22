@@ -198,7 +198,6 @@ const initEvents = (map, groupGLLayer) => {
         const vectorLayer = map.getLayer("vector");
 
         const geometrys = vectorLayer.getGeometries();
-        console.log(n);
         geometrys.forEach((geometry) => {
             geometry.remove();
             if (e.key == "w") {
