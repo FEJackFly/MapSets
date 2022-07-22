@@ -1,0 +1,259 @@
+{
+    "jsonVersion": "1.0",
+    "version": "1.0.0-rc.8",
+    "extent": {
+        "xmin": 116.9029072375755,
+        "ymin": 39.58175660070569,
+        "xmax": 116.90336164065161,
+        "ymax": 39.5821186984285
+    },
+    "options": {
+        "lights": {
+            "directional": {
+                "direction": [1, 0, -1],
+                "color": [1, 1, 1]
+            },
+            "ambient": {
+                "resource": {
+                    "url": "/hdr/env.hdr"
+                },
+                "exposure": 0.8,
+                "hsv": [0, 0, 0],
+                "orientation": 1,
+                "prefilterCubeSize": 64
+            }
+        },
+        "seamlessZoom": true,
+        "doubleClickZoom": false,
+        "zoomable": true,
+        "draggable": true,
+        "center": [117.03032294469759, 39.42372065518668],
+        "zoom": 22,
+        "bearing": 146.17611875603257,
+        "pitch": 23.200000000000113
+    },
+    "layers": [
+        {
+            "type": "GroupGLLayer",
+            "id": "groupGLLayer",
+            "layers": [
+                {
+                    "type": "PolygonLayer",
+                    "id": "vector",
+                    "options": {},
+                    "geometries": []
+                },
+                {
+                    "type": "GeoJSONVectorTileLayer",
+                    "id": "geojsonMap",
+                    "options": {
+                        "data": "geojson/all.json",
+                        "style": {
+                            "style": [
+                                {
+                                    "filter": ["all", ["==", "type", 0]],
+                                    "renderPlugin": {
+                                        "dataConfig": {
+                                            "type": "line"
+                                        },
+                                        "sceneConfig": {},
+                                        "type": "line"
+                                    },
+                                    "symbol": {
+                                        "lineBloom": false,
+                                        "lineCap": "butt",
+                                        "lineColor": [0.73, 0.73, 0.73, 1],
+                                        "lineDasharray": [0, 0, 0, 0],
+                                        "lineDashColor": [1, 1, 1, 0],
+                                        "lineDx": 0,
+                                        "lineDy": 0,
+                                        "lineGapWidth": 0,
+                                        "lineJoin": "miter",
+                                        "lineOpacity": 1,
+                                        "linePatternAnimSpeed": 0,
+                                        "linePatternFile": null,
+                                        "lineStrokeWidth": 0,
+                                        "lineStrokeColor": [0, 0, 0, 0],
+                                        "lineJoinPatternMode": 0,
+                                        "lineWidth": 2,
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "filter": ["all", ["==", "type", 1]],
+                                    "renderPlugin": {
+                                        "dataConfig": {
+                                            "type": "line"
+                                        },
+                                        "sceneConfig": {},
+                                        "type": "line"
+                                    },
+                                    "symbol": {
+                                        "lineBloom": true,
+                                        "lineCap": "butt",
+                                        "lineColor": [0.73, 0.73, 0.73, 1],
+                                        "lineDasharray": [150, 150, 150, 150],
+                                        "lineDashColor": [0.73, 0.73, 0.73, 0],
+                                        "lineDx": 0,
+                                        "lineDy": 0,
+                                        "lineGapWidth": 0,
+                                        "lineJoin": "miter",
+                                        "lineOpacity": 1,
+                                        "linePatternAnimSpeed": 0,
+                                        "linePatternFile": null,
+                                        "lineStrokeWidth": 0,
+                                        "lineStrokeColor": [0, 0, 0, 0],
+                                        "lineJoinPatternMode": 0,
+                                        "lineWidth": {
+                                            "stops": [
+                                                [16, 2],
+                                                [22, 10]
+                                            ]
+                                        },
+                                        "visible": true
+                                    }
+                                },
+                                {
+                                    "filter": ["all", ["==", "type", 4]],
+                                    "renderPlugin": {
+                                        "dataConfig": {
+                                            "type": "line"
+                                        },
+                                        "sceneConfig": {},
+                                        "type": "line"
+                                    },
+                                    "symbol": {
+                                        "lineBloom": false,
+                                        "lineCap": "butt",
+                                        "lineColor": [0.73, 0.73, 0.73, 1],
+                                        "lineDasharray": [10, 10, 10, 10],
+                                        "lineDashColor": [1, 1, 1, 0],
+                                        "lineDx": 0,
+                                        "lineDy": 0,
+                                        "lineGapWidth": 0,
+                                        "lineJoin": "miter",
+                                        "lineOpacity": 1,
+                                        "linePatternAnimSpeed": 0,
+                                        "linePatternFile": null,
+                                        "lineStrokeWidth": 0,
+                                        "lineStrokeColor": [0, 0, 0, 0],
+                                        "lineJoinPatternMode": 0,
+                                        "lineWidth": 2,
+                                        "visible": true
+                                    }
+                                }
+                            ],
+                            "featureStyle": []
+                        }
+                    }
+                },
+                {
+                    "type": "LineStringLayer",
+                    "id": "planningLine",
+                    "options": {},
+                    "geometries": []
+                },
+                {
+                    "type": "LineStringLayer",
+                    "id": "realLine",
+                    "options": {},
+                    "geometries": []
+                },
+                {
+                    "type": "GLTFLayer",
+                    "id": "ego",
+                    "options": {},
+                    "geometries": []
+                },
+                {
+                    "type": "GLTFLayer",
+                    "id": "gltfs",
+                    "options": {},
+                    "geometries": []
+                }
+            ],
+            "options": {
+                "hitDetect": false,
+                "geometryEvents": false,
+                "picking": false,
+                "sceneConfig": {
+                    "environment": {
+                        "enable": true,
+                        "mode": 0,
+                        "level": 0,
+                        "brightness": 0
+                    },
+                    "shadow": {
+                        "type": "esm",
+                        "enable": true,
+                        "quality": "high",
+                        "opacity": 0.5,
+                        "color": [0, 0, 0],
+                        "blurOffset": 1
+                    },
+                    "postProcess": {
+                        "enable": true,
+                        "antialias": {
+                            "enable": true
+                        },
+                        "ssr": {
+                            "enable": false
+                        },
+                        "bloom": {
+                            "enable": false,
+                            "threshold": 0,
+                            "factor": 0.4,
+                            "radius": 0.304
+                        },
+                        "ssao": {
+                            "enable": false,
+                            "bias": 0.08,
+                            "radius": 0.08,
+                            "intensity": 1.5
+                        },
+                        "sharpen": {
+                            "enable": false,
+                            "factor": 0.2
+                        },
+                        "outline": {
+                            "enable": false,
+                            "outlineFactor": 0.3,
+                            "highlightFactor": 0.2,
+                            "outlineWidth": 1,
+                            "outlineColor": [1, 1, 0]
+                        }
+                    },
+                    "ground": {
+                        "enable": true,
+                        "renderPlugin": {
+                            "type": "lit"
+                        },
+                        "symbol": {
+                            "polygonOpacity": 1,
+                            "material": {
+                                "baseColorFactor": [
+                                    0.48235, 0.48235, 0.48235, 1
+                                ],
+                                "hsv": [0, 0, -0.532],
+                                "roughnessFactor": 0.22,
+                                "metallicFactor": 0.58
+                            }
+                        },
+                        "extras": {
+                            "currentMaterial": ""
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "hitDetect": false,
+            "geometryEvents": false,
+            "picking": false,
+            "type": "VectorLayer",
+            "id": "vector",
+            "options": {},
+            "geometries": []
+        }
+    ]
+}

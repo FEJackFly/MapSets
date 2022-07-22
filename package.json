@@ -1,0 +1,29 @@
+{
+  "name": "mapsets",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@maptalks/gl-layers": "^0.7.1",
+    "@maptalks/transcoders.draco": "^0.73.0",
+    "@turf/turf": "^6.5.0",
+    "@tweenjs/tween.js": "^18.6.4",
+    "axios": "^0.27.2",
+    "less": "^4.1.3",
+    "maptalks": "^v1.0.0-rc.8",
+    "maptalks.three": "^0.27.3",
+    "npm": "^8.10.0",
+    "stats.js": "^0.17.0",
+    "three": "^0.140.2",
+    "utm": "^1.1.1",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.1",
+    "vite": "^2.9.7"
+  }
+}
